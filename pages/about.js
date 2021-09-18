@@ -3,12 +3,11 @@ import Head from "next/Head"
 import styles from "../styles/About.module.css"
 const about = () => {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>About</title>
-      
       </Head>
-      <h1>about page</h1>
+      <h1>This is the about page</h1>
     </div>
   )
 }

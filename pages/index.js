@@ -14,7 +14,7 @@ export default function Home() {
         />
       </Head>
 
-      <h1>Test h1</h1>
+      <h1>This is the home page</h1>
     </div>
   )
 }
