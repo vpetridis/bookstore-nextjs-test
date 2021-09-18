@@ -1,5 +1,5 @@
 import React from "react"
-
+import Link from 'next/link'
 import { Layout, Menu, Typography } from "antd"
 import {
   UploadOutlined,
@@ -30,29 +30,29 @@ const LayoutComponent = ({ children }) => {
           mode="inline"
           defaultSelectedKeys={["4"]}
         >
-          <Menu.Item
-            key="1"
-            icon={<UserOutlined />}
-          >
-            nav 1
-          </Menu.Item>
+            <Menu.Item
+              key="1"
+              icon={<UserOutlined />}
+            >
+              <Link href='/'>Home</Link>
+            </Menu.Item>
           <Menu.Item
             key="2"
             icon={<VideoCameraOutlined />}
           >
-            nav 2
+            <Link href='/about'>About</Link>
           </Menu.Item>
           <Menu.Item
             key="3"
             icon={<UploadOutlined />}
           >
-            nav 3
+            <Link href='/books-list'>Books List</Link>
           </Menu.Item>
           <Menu.Item
             key="4"
             icon={<UserOutlined />}
           >
-            nav 4
+            <Link href='/throws-404'>Nowhere</Link>
           </Menu.Item>
         </Menu>
       </Sider>
