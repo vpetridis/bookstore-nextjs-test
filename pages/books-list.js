@@ -9,35 +9,34 @@ const booksList = ({ posts }) => {
   const router = useRouter()
 
   return (
-    
-      <List
-        itemLayout="vertical"
-        size="large"
-        pagination={{
-          onChange: (page) => {
-            console.log(page)
-          },
-          pageSize: 3,
-        }}
-        dataSource={posts}
-        footer={
-          <div>
-            <b>All books </b> for yourself...
-          </div>
-        }
-        renderItem={(item) => (
-          <BookSingle item={item} />
-        )}
-      />
-    
+    <List
+      itemLayout="vertical"
+      size="small"
+      pagination={{
+        onChange: (page) => {
+          console.log(page)
+          getStaticProps({ page })
+        },
+        pageSize: 3,
+      }}
+      dataSource={posts}
+      footer={
+        <div>
+          <b>All books </b> for yourself...
+        </div>
+      }
+      renderItem={(item) => (
+        <BookSingle item={item} />
+      )}
+    />
   )
 }
 
-export async function getStaticProps(context) {
+export async function getStaticProps({ page }) {
+  console.log("page is", page)
   const res = await fetch(
-    "https://jsonplaceholder.typicode.com/posts"
+    `https://jsonplaceholder.typicode.com/posts`
   )
-  console.log(res)
   const posts = await res.json()
   return {
     props: { posts },
