@@ -1,4 +1,3 @@
-import Head from "next/head"
 import Anime, { anime } from "react-anime"
 
 import {
@@ -58,14 +57,7 @@ export default function Home() {
       justify="start"
       gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}
     >
-      <Head>
-        <title>Bookstore NextJs Test</title>
-        <meta
-          name="Bookstore NextJs"
-          content="programming, nextjs, Bookstore"
-          description="trying to learn some stuff with nextJs"
-        />
-      </Head>
+    
       <Col>
         <Anime
           delay={anime.stagger(100)}

@@ -1,5 +1,4 @@
 import React from "react"
-import Head from "next/Head"
 import styles from "../styles/About.module.css"
 import {
   Typography,
@@ -21,9 +20,7 @@ const About = () => {
         gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}
       >
         {" "}
-        <Head>
-          <title>About</title>
-        </Head>
+    
         <Col>
           <Card style={{ width: 400 }}>
             <Title level={2}>Ponder about</Title>
