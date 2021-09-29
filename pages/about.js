@@ -53,7 +53,7 @@ const about = () => {
                 Find out how to use css modules{" "}
               </Timeline.Item>
               <Timeline.Item color="green">
-                List "books" with getStaticProps
+                List books with getStaticProps
               </Timeline.Item>
               <Timeline.Item color="green">
                 Create pagination for all books{" "}

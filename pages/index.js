@@ -92,7 +92,7 @@ export default function Home() {
                 }}
                 icon={<AntDesignOutlined />}
               />
-              <Title>Hi, y'all</Title>{" "}
+              <Title>Hi there!</Title>{" "}
               <Title level={3}>
                 <Popover
                   content={popoverContent}
@@ -131,6 +131,7 @@ export default function Home() {
                     how to use this
                     <a
                       target="_blank"
+                      rel="noreferrer"
                       href="https://nextjs.org/"
                     >
                       {" "}

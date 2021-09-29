@@ -1,12 +1,9 @@
 import React, { useState } from "react"
-import axios from "axios"
-import { useRouter } from "next/router"
 
 import { List, Avatar, Space } from "antd"
 import BookSingle from "../components/BookSingle"
 
 const booksList = ({ posts }) => {
-  const router = useRouter()
   const [size, setSize] = useState(10)
   return (
     <List
