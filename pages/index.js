@@ -1,4 +1,3 @@
-
 import {
   Avatar,
   Typography,
@@ -56,104 +55,97 @@ export default function Home() {
       justify="start"
       gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}
     >
-    
       <Col>
- 
-          {" "}
-          <div className="site-card-border-less-wrapper">
-            <Card
-              // title="No reason card"
-              bordered={false}
-              style={{
-                height: 300,
+        {" "}
+        <div className="site-card-border-less-wrapper">
+          <Card
+            // title="No reason card"
+            bordered={false}
+            style={{
+              height: 300,
+            }}
+          >
+            {" "}
+            <Avatar
+              size={{
+                xs: 24,
+                sm: 32,
+                md: 40,
+                lg: 64,
+                xl: 80,
+                xxl: 100,
               }}
-            >
-              {" "}
-              <Avatar
-                size={{
-                  xs: 24,
-                  sm: 32,
-                  md: 40,
-                  lg: 64,
-                  xl: 80,
-                  xxl: 100,
-                }}
-                icon={<AntDesignOutlined />}
-              />
-              <Title>Hi there!</Title>{" "}
-              <Title level={3}>
-                <Popover
-                  content={popoverContent}
-                  title="Escaping brackets"
-                >
-                  <Button>
-                    <Title
-                      level={5}
-                    >{`{pointless}`}</Title>
-                  </Button>
-                </Popover>{" "}
-                app lovers!
-              </Title>{" "}
-            </Card>
-          </div>
+              icon={<AntDesignOutlined />}
+            />
+            <Title>Hi there!</Title>{" "}
+            <Title level={3}>
+              <Popover
+                content={popoverContent}
+                title="Escaping brackets"
+              >
+                <Button className="animate__animated animate__bounce animate__delay-1s">
+                  <Title
+                    level={5}
+                  >{`{pointless}`}</Title>
+                </Button>
+              </Popover>{" "}
+              app lovers!
+            </Title>{" "}
+          </Card>
+        </div>
       </Col>
       <Col>
-     
-          {" "}
-          <div className="site-card-border-less-wrapper">
-            <Card bordered={false} >
-              <Title level={3}>
-                Info here and there
-              </Title>
-              <Collapse accordion>
-                <Panel
-                  header="What's this?"
-                  key="1"
-                >
-                  <p>
-                    Some random guy figuring out
-                    how to use this
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
-                      href="https://nextjs.org/"
-                    >
-                      {" "}
-                      NextJs
-                    </a>{" "}
-                    stuff.
-                  </p>{" "}
-                </Panel>
-                <Panel
-                  header="Why are you doing this?"
-                  key="2"
-                >
-                  <p>
-                    Wanted to find out how to use
-                    Static Site Generation for
-                    starters but{" "}
-                    <Button
-                      type="primary"
-                      onClick={openNotification}
-                    >
-                      then I said{" "}
-                    </Button>
-                  </p>
-                </Panel>
-                <Panel
-                  header="Is this something useful?"
-                  key="3"
-                >
-                  <p>
-                    This is by no means useful.
-                    Even fallen tree branches
-                    surpass this site in
-                    usefulness.
-                  </p>{" "}
-                </Panel>
-              </Collapse>
-            </Card>
-          </div>
+        {" "}
+        <div className="site-card-border-less-wrapper">
+          <Card bordered={false}>
+            <Title level={3}>
+              Info here and there
+            </Title>
+            <Collapse accordion>
+              <Panel header="What's this?" key="1">
+                <p>
+                  Some random guy figuring out how
+                  to use this
+                  <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://nextjs.org/"
+                  >
+                    {" "}
+                    NextJs
+                  </a>{" "}
+                  stuff.
+                </p>{" "}
+              </Panel>
+              <Panel
+                header="Why are you doing this?"
+                key="2"
+              >
+                <p>
+                  Wanted to find out how to use
+                  Static Site Generation for
+                  starters but{" "}
+                  <Button
+                    type="primary"
+                    onClick={openNotification}
+                  >
+                    then I said{" "}
+                  </Button>
+                </p>
+              </Panel>
+              <Panel
+                header="Is this something useful?"
+                key="3"
+              >
+                <p>
+                  This is by no means useful. Even
+                  fallen tree branches surpass this
+                  site in usefulness.
+                </p>{" "}
+              </Panel>
+            </Collapse>
+          </Card>
+        </div>
       </Col>
     </Row>
   )
