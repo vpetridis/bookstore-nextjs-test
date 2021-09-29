@@ -10,7 +10,7 @@ import {
   Timeline,
   Divider,
 } from "antd"
-const about = () => {
+const About = () => {
   const { Title, Paragraph, Text, Link } =
     Typography
   const { Panel } = Collapse
@@ -83,4 +83,4 @@ const about = () => {
   )
 }
 
-export default about
+export default About

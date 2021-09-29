@@ -3,7 +3,7 @@ import React, { useState } from "react"
 import { List, Avatar, Space } from "antd"
 import BookSingle from "../components/BookSingle"
 
-const booksList = ({ posts }) => {
+const BooksList = ({ posts }) => {
   const [size, setSize] = useState(10)
   return (
     <List
@@ -39,4 +39,4 @@ export async function getStaticProps() {
   }
 }
 
-export default booksList
+export default BooksList
