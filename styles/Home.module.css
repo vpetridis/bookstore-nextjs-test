@@ -119,3 +119,8 @@
     flex-direction: column;
   }
 }
+
+.card-animate{
+  transition: all 1.2s ease-in-out;
+  background-color: #0070f3;
+}

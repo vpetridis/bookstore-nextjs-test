@@ -29,3 +29,9 @@ a {
 .ant-layout-sider-children{
   height: 100vh !important;
 }
+
+
+.card-animate{
+  transition: all 1.2s ease-in-out !important;
+  background-color: #0070f3 !important;
+}
