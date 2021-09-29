@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import axios from "axios"
 import { useRouter } from "next/router"
 
@@ -7,17 +7,17 @@ import BookSingle from "../components/BookSingle"
 
 const booksList = ({ posts }) => {
   const router = useRouter()
-
+  const [size, setSize] = useState(10)
   return (
     <List
       itemLayout="vertical"
       size="small"
       pagination={{
-        onChange: (page) => {
-          console.log(page)
-          getStaticProps({ page })
+        onChange: (page, pageSize) => {
+          console.log(page, size)
+          setSize(pageSize)
         },
-        pageSize: 3,
+        pageSize: size,
       }}
       dataSource={posts}
       footer={
@@ -32,8 +32,7 @@ const booksList = ({ posts }) => {
   )
 }
 
-export async function getStaticProps({ page }) {
-  console.log("page is", page)
+export async function getStaticProps() {
   const res = await fetch(
     `https://jsonplaceholder.typicode.com/posts`
   )
