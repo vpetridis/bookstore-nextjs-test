@@ -1,4 +1,3 @@
-import Anime, { anime } from "react-anime"
 
 import {
   Avatar,
@@ -59,10 +58,7 @@ export default function Home() {
     >
     
       <Col>
-        <Anime
-          delay={anime.stagger(100)}
-          scale={[0.1, 0.9]}
-        >
+ 
           {" "}
           <div className="site-card-border-less-wrapper">
             <Card
@@ -100,13 +96,9 @@ export default function Home() {
               </Title>{" "}
             </Card>
           </div>
-        </Anime>{" "}
       </Col>
       <Col>
-        <Anime
-          delay={anime.stagger(200)}
-          scale={[0.1, 0.9]}
-        >
+     
           {" "}
           <div className="site-card-border-less-wrapper">
             <Card bordered={false} >
@@ -162,7 +154,6 @@ export default function Home() {
               </Collapse>
             </Card>
           </div>
-        </Anime>
       </Col>
     </Row>
   )
