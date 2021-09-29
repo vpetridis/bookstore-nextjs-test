@@ -20,7 +20,6 @@ const About = () => {
         gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}
       >
         {" "}
-    
         <Col>
           <Card style={{ width: 400 }}>
             <Title level={2}>Ponder about</Title>
@@ -59,6 +58,15 @@ const About = () => {
                 <p>
                   Learn how to use
                   getServerSideProps{" "}
+                </p>
+              </Timeline.Item>
+              <Timeline.Item color="red">
+                <p>
+                  Error while building:
+                  react-animate throws an error
+                  when used in nextJst. Need to
+                  find this out or use an other
+                  library.
                 </p>
               </Timeline.Item>
               <Timeline.Item color="red">
