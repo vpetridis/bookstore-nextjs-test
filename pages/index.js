@@ -201,7 +201,7 @@ export default function Home() {
                 "I love making stuff online!",
               ],
               autoStart: true,
-              loop: true,
+              loop: false,
             }}
           />
         </Title>
