@@ -155,9 +155,9 @@ export default function Home() {
           <Title>Github</Title>
           <Text>
             You are probably here because you are
-            on a quest for a front-end dev. It's
+            on a quest for a front-end dev. It&apos;s
             okay. I can make stuff right away. Even
-            if I can't I will reach out to the docs
+            if I can&apos;t I will reach out to the docs
             and find out what you want to build.
           </Text>
           <Title level={4}>
