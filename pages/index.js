@@ -10,6 +10,9 @@ import {
   Popover,
 } from "antd"
 import { AntDesignOutlined } from "@ant-design/icons"
+import Image from "next/image"
+import { ReactSVG } from "react-svg"
+import billyAvatar from "../public/svg/billy_avatar.svg"
 
 export default function Home() {
   const { Title, Paragraph, Text, Link } =
@@ -75,7 +78,7 @@ export default function Home() {
                 xl: 80,
                 xxl: 100,
               }}
-              icon={<AntDesignOutlined />}
+              src={<Image src={billyAvatar} />}
             />
             <Title>Hi there!</Title>{" "}
             <Title level={3}>
@@ -147,6 +150,24 @@ export default function Home() {
           </Card>
         </div>
       </Col>
+      <Row>
+        <Card style={{ width: "400px" }}>
+          <Title>Github</Title>
+          <Text>
+            You are probably here because you are
+            on a quest for a front-end dev. It's
+            okay. I can make stuff right away. Even
+            if I can't I will reach out to the docs
+            and find out what you want to build.
+          </Text>
+          <Title level={4}>
+            {" "}
+            <a href="https://github.com/vpetridis">
+              Here is my github
+            </a>
+          </Title>
+        </Card>
+      </Row>
     </Row>
   )
 }

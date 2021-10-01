@@ -1,9 +1,16 @@
+:root {
+  --bg-color: #001529;
+  --shadow: 
+}
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
+  box-sizing: border-box;
 }
 
 a {
@@ -26,12 +33,34 @@ a {
   background: #fff;
 }
 
-.ant-layout-sider-children{
+.ant-layout-sider-children {
   height: 100vh !important;
 }
 
-
-.card-animate{
+.card-animate {
   transition: all 1.2s ease-in-out !important;
   background-color: #0070f3 !important;
+}
+
+.ant-list-items {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+
+.ant-list-item {
+  cursor: pointer !important;
+  margin: 2px;
+  transition: all 0.1s ease-in-out;
+  -webkit-box-shadow: 6px 6px 24px -15px rgba(89, 87, 89, 0.73);
+  -moz-box-shadow: 6px 6px 24px -15px rgba(89, 87, 89, 0.73);
+  box-shadow: 6px 6px 24px -15px rgba(89, 87, 89, 0.73);
+  padding: 14px !important;
+}
+
+.ant-list-item:hover {
+  /* border: 1px var(--bg-color) solid;
+  border-bottom: 1px var(--bg-color) solid !important; */
+  /* border-radius: 3px; */
+  transform: translate(0, -5px);
 }
