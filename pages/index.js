@@ -151,39 +151,41 @@ export default function Home() {
           </Card>
         </div>
       </Col>
-      <Row>
-        <Card style={{ width: "400px" }}>
-          <Title>Github</Title>
-          <Divider />
-          <Paragraph>
-            {" "}
-            You are probably here because you are
-            on a quest for a front-end dev.
-            It&apos;s okay. I can make stuff right
-            away. I will reach out to the docs and
-            find out what you want to build.
-          </Paragraph>
-          <Title level={4}>
-            {" "}
-            <Popover
-              title="Some popovers are meaningless"
-              content={
-                <p>
-                  Just imagine a word without the
-                  extra info. <br /> Wanna drive a
-                  car? Figure it out by yourself...
-                  <br /> This is why popovers where
-                  built for
-                </p>
-              }
-            >
-              <a href="https://github.com/vpetridis">
-                where you came from
-              </a>
-            </Popover>
-          </Title>
-        </Card>{" "}
-      </Row>{" "}
+        <Col>
+        <div className="site-card-border-less-wrapper">
+            <Card style={{ width: "400px" }}>
+              <Title>Github</Title>
+              <Divider />
+              <Paragraph>
+                {" "}
+                You are probably here because you are
+                on a quest for a front-end dev.
+                It&apos;s okay. I can make stuff right
+                away. I will reach out to the docs and
+                find out what you want to build.
+              </Paragraph>
+              <Title level={4}>
+                {" "}
+                <Popover
+                  title="Some popovers are meaningless"
+                  content={
+                    <p>
+                      Just imagine a word without the
+                      extra info. <br /> Wanna drive a
+                      car? Figure it out by yourself...
+                      <br /> This is why popovers where
+                      built for
+                    </p>
+                  }
+                >
+                  <a href="https://github.com/vpetridis">
+                    where you came from
+                  </a>
+                </Popover>
+              </Title>
+            </Card>
+          </div>
+        </Col>
       <Col
         span={12}
         style={{
