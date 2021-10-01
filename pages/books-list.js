@@ -4,7 +4,7 @@ import { List, Avatar, Space } from "antd"
 import BookSingle from "../components/BookSingle"
 
 const BooksList = ({ posts }) => {
-  const [size, setSize] = useState(10)
+  const [size, setSize] = useState(3)
   return (
     <List
       itemLayout="vertical"
