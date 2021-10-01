@@ -8,10 +8,11 @@ import {
   Button,
   notification,
   Popover,
+  Divider,
 } from "antd"
-import { AntDesignOutlined } from "@ant-design/icons"
+
 import Image from "next/image"
-import { ReactSVG } from "react-svg"
+import Typewriter from "typewriter-effect"
 import billyAvatar from "../public/svg/billy_avatar.svg"
 
 export default function Home() {
@@ -153,21 +154,58 @@ export default function Home() {
       <Row>
         <Card style={{ width: "400px" }}>
           <Title>Github</Title>
-          <Text>
+          <Divider />
+          <Paragraph>
+            {" "}
             You are probably here because you are
-            on a quest for a front-end dev. It&apos;s
-            okay. I can make stuff right away. Even
-            if I can&apos;t I will reach out to the docs
-            and find out what you want to build.
-          </Text>
+            on a quest for a front-end dev.
+            It&apos;s okay. I can make stuff right
+            away. I will reach out to the docs and
+            find out what you want to build.
+          </Paragraph>
           <Title level={4}>
             {" "}
-            <a href="https://github.com/vpetridis">
-              Here is my github
-            </a>
+            <Popover
+              title="Some popovers are meaningless"
+              content={
+                <p>
+                  Just imagine a word without the
+                  extra info. <br /> Wanna drive a
+                  car? Figure it out by yourself...
+                  <br /> This is why popovers where
+                  built for
+                </p>
+              }
+            >
+              <a href="https://github.com/vpetridis">
+                where you came from
+              </a>
+            </Popover>
           </Title>
-        </Card>
-      </Row>
+        </Card>{" "}
+      </Row>{" "}
+      <Col
+        span={12}
+        style={{
+          margin: "100px 0px",
+        }}
+      >
+        <Title>
+          <Typewriter
+            options={{
+              strings: [
+                "Front-end,",
+                "React, NextJS, Strapi",
+
+                "...and many more",
+                "I love making stuff online!",
+              ],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+        </Title>
+      </Col>
     </Row>
   )
 }
