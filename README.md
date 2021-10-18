@@ -14,7 +14,7 @@ gave it a few tries in this project.
 ## What's next?
 
 In the
-[About](https:/https://bookstore-nextjs-test-4504a7svy-vpetridis.vercel.app/about)
+[About](https://bookstore-nextjs-test-4504a7svy-vpetridis.vercel.app/about)
 page you may find my next steps for this project,
 along with everything I have tried so far.
 
